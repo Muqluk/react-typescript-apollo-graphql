@@ -1,0 +1,50 @@
+const InitialStateBase = {
+  // apiMetaResults: {
+  //   columnMetaData: [],
+  //   requestTimestamp: '',
+  //   resultTimestamp: '',
+  //   totalCount: 0,
+  // },
+  // apiRequestParams: {
+  //   controller: '',
+  //   order: 'asc',
+  //   orderBy: '',
+  //   page: 1,
+  //   pageSize: 150000,
+  //   apiFilters: [],
+  //   overrides: {
+  //     allowMultiLine: false,
+  //     singleLineDisplay: true,
+  //     autoColumnDefinition: true,
+  //     multiLineColumns: [],
+  //   },
+  //   referrer: {
+  //     pathName: '',
+  //     search: '',
+  //     state: {},
+  //     hash: '',
+  //   },
+  // },
+  gridDataModel: {
+    allowMultiLine: false,
+    fetchingData: false,
+    fetchingDataError: false,
+    columns: [],
+    columnOrder: [],
+    columnWidths: [],
+    defaultSortColumns: [],
+    gridFilters: [],
+    groupByColumns: [],
+    hiddenColumns: [],
+    hideSelected: false,
+    rows: [],
+    selected: [],
+    singleLineDisplay: true,
+    hideShowToggle: true,
+    showExport: false,
+    tableColumnExtensions: [],
+    totalCount: 0,
+  },
+};
+
+export default InitialStateBase;

@@ -1,0 +1,67 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "module": "esnext",
+    "target": "es5",
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "sourceMap": true,
+    "allowJs": false,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "baseUrl": ".",
+    "paths": {
+      "@mui/styled-engine": [
+        "./node_modules/@mui/styled-engine-sc"
+      ],
+      "*": [
+        "./*"
+      ],
+      "@decorators/*": [
+        ".storybook/decorators/*"
+      ],
+      "@appState/*": [
+        "src/app-base/state/*"
+      ],
+      "@common/*": [
+        "src/common/*"
+      ],
+      "@domains/*": [
+        "src/domains/*"
+      ],
+      "@utilities/*": [
+        "src/common/utilities/*"
+      ]
+    },
+    "types": [
+      "jest",
+      "node",
+      "react"
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  },
+  "include": [
+    "src/**/*.tsx",
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    ".vscode",
+    "coverage",
+    "dist"
+  ]
+}

@@ -1,0 +1,21 @@
+/**@jsx jsx */
+/**@jsxFrag React.Fragment */
+import { jsx } from '@emotion/react';
+import { Story as MetaStory, Meta } from '@storybook/react';
+import { WithCanvasDecorator } from '@decorators/.';
+import { IconExplorer } from '../mui-icon-gallery';
+import { withCanvasWrapperCss } from '../styles';
+
+export default {
+  title: 'Dev Tools/Material UI Gallery/Icons',
+  component: IconExplorer,
+  decorators: [(Story: MetaStory) => (
+    <WithCanvasDecorator wrapper={withCanvasWrapperCss}>
+      <Story />
+    </WithCanvasDecorator>
+  )],
+} as Meta;
+
+const Template = (args: any) => <IconExplorer {...args} />;
+
+export const Gallery = Template.bind({});
